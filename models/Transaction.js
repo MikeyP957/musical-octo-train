@@ -21,12 +21,16 @@ Transaction.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
+        timestamp: {
+            type:DataTypes.DATE,
+            allowNull: false
+        }
     },
     { 
         sequelize,
         timestamps:true,
-        createdAt:true,
-        updatedAt: true 
+        createdAt:false,
+        updatedAt: false 
     }
 );
 
