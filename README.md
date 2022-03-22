@@ -37,3 +37,13 @@ brew install --cask insomnia
 brew install --cask postman
 ```
 Once a client is installed go to go to http://localhost:3000 to create, read, update or delete rows from the database.
+
+## inserting data
+To add data to the database follow the schema:
+```
+{
+    "payer":"Dannon"
+    "points":500
+}
+```
+The timestamp is handled by the database and will create a timestamp upon creation and stored as createdAt. When a row is updated the timestamp is changed to reflect the updated time with field updatedAt

@@ -1,26 +1,22 @@
 [
     {
-        "payer":"Mikey P",
-        "points": 50
+         "payer": "DANNON",
+          "points": 1000 
     },
     {
-        "payer":"Theodore",
-        "points": 150
+         "payer": "UNILEVER",
+          "points": 200 
     },
     {
-        "payer":"Alicia",
-        "points": 520
+         "payer": "DANNON",
+          "points": -200 
     },
     {
-        "payer":"Jade",
-        "points": 540
+         "payer": "MILLER COORS",
+          "points": 10000 
     },
     {
-        "payer":"Xue Ying",
-        "points": 150
-    },
-    {
-        "payer":"Hattie",
-        "points": 580
+         "payer": "DANNON",
+          "points": 300 
     }
 ]
