@@ -13,4 +13,18 @@ router.get('/', async (req, res) =>{
     }
 })
 
+router.get('/balance', async (req, res) => {
+    try {
+        const transactionList =await Transaction.findAll()
+
+        const filteredResults = transactionList.map(({payer, points}) => ({
+            [payer]: points
+        }))
+        
+        res.status(200).json(filteredResults)
+    } catch (err) {
+        res.status(500).json({error: err})
+    }
+})
+
 module.exports = router;
