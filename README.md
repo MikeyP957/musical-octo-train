@@ -2,7 +2,7 @@
 Backend Routing Exercise
 
 ## user story
-I want to be able to add transactions to a database that includes a payer, an amount of points and a pre-determined time-stamp. Negative point ammounts are not allowd.
+I want to be able to add transactions to a database that includes a payer, an amount of points and a pre-determined time-stamp. Negative point amounts are not allowed.
 
 I want to be able to view my point balances for each transaction that includes only the payer and the amount of points for that transaction.
 
@@ -16,9 +16,9 @@ $ brew install node
 To download mySQL you can download it here: [MySQL](https://dev.mysql.com/downloads/mysql/)
 or using homebrew:
 ```
-$ brew insatll mysql
+$ brew install mysql
 ```
-Once node and mySQL are insalled open the home directory and in the terminal run:
+Once node and mySQL are installed, open the home directory and in the terminal run:
 ```
 $ npm i
 ```
