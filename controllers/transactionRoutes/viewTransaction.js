@@ -4,7 +4,7 @@ const { Transaction } = require("../../models");
 router.get("/", async (req, res) => {
   try {
     const transactions = await Transaction.findAll({
-      order: [["timestamp", "DESC"]],
+      order: [["timestamp", "ASC"]],
     });
 
     res.status(200).json(transactions);

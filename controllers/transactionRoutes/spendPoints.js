@@ -45,7 +45,7 @@ router.put("/", async (req, res) => {
     let pointsToSpend = req.body.points;
 
     const orderedTransactions = await Transaction.findAll({
-      order: [["timestamp", "DESC"]],
+      order: [["timestamp", "ASC"]],
     });
 
     const [updatedList, changes] = spendPoints(
