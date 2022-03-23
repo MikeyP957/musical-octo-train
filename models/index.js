@@ -1,5 +1,5 @@
-const Transaction = require('./Transaction')
+const Transaction = require("./Transaction");
 
 // Insert Relationships, foreign key's
 
-module.exports = { Transaction }
+module.exports = { Transaction };
