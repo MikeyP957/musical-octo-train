@@ -11,11 +11,9 @@ router.post("/", async (req, res) => {
       });
       res.status(200).json(newTransaction);
     } else {
-      res
-        .status(400)
-        .json({
-          error: "Points must be greater than 0 when adding a transaction",
-        });
+      res.status(400).json({
+        error: "Points must be greater than 0 when adding a transaction",
+      });
     }
   } catch (err) {
     res.status(500).json({ error: err });
