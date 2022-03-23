@@ -14,6 +14,7 @@ I want to be able to spend points so that oldest points are spent first and no p
 
 - You have installed Node.js
 - You have installed MySQL
+- You have installed a database tool such as MySQL WorkBench or DBeaver
 
 [Node.js Download](https://nodejs.org/en/download/) or using homebrew:
 
@@ -28,9 +29,24 @@ or using homebrew:
 $ brew install mysql
 ```
 
+[MySQL WorkBench Download](https://dev.mysql.com/downloads/workbench/) or using homebrew:
+
+```
+brew install --cask mysqlworkbench
+```
+
 ## Installing musical-octo-train
 
-Once node and mySQL are installed, open the home directory and in the terminal run:
+Using MySQL WorkBench or DBeaver start a local connection and create an empty database `store_db`
+
+```
+DROP DATABASE IF EXISTS store_db;
+CREATE DATABASE store_db;
+```
+
+To connect to the database a `.env` file should be created and completed with the password for the local connection. An example can be found in the home directory as `.env.EXAMPLE`
+
+While in the home directory, install Node packages using the command:
 
 ```
 $ npm i
@@ -60,7 +76,6 @@ brew install --cask insomnia
 ```
 brew install --cask postman
 ```
-
 
 ### Inserting Transactions
 
