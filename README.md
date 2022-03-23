@@ -32,7 +32,7 @@ $ brew install mysql
 [MySQL WorkBench Download](https://dev.mysql.com/downloads/workbench/) or using homebrew:
 
 ```
-brew install --cask mysqlworkbench
+$ brew install --cask mysqlworkbench
 ```
 
 ## Installing musical-octo-train
@@ -70,11 +70,11 @@ Download either [insomnia](https://insomnia.rest/download) or [postman](https://
 use homebrew:
 
 ```
-brew install --cask insomnia
+$ brew install --cask insomnia
 ```
 
 ```
-brew install --cask postman
+$ brew install --cask postman
 ```
 
 ### Inserting Transactions
